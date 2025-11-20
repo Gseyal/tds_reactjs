@@ -1,180 +1,160 @@
-
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Q4 Earnings – Interactive Deck</title>
 
-    <meta name="description" content="Quarterly Earnings RevealJS Presentation" />
-    <meta name="author" content="Technical Consultant" />
+<head>
+  <meta charset="utf-8" />
+  <title>TDS Quarterly Earnings RevealJS Deck</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="description" content="Quarterly Financial Report - Interactive RevealJS Presentation">
+  <meta name="author" content="Gautam Seyal / Technical Consultant">
 
-    <!-- Reveal.js core CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/reveal.css" />
-    <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/theme/black.css" id="theme" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Code syntax highlighting -->
-    <link rel="stylesheet" href="https://unpkg.com/reveal.js/plugin/highlight/monokai.css" />
+  <!-- Reveal CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/reveal.css" />
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/theme/black.css" id="theme">
 
-    <style>
-      .email-tag {
-        font-size: 0.7em;
-        opacity: 0.8;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="reveal">
-      <div class="slides">
-        <!-- Title slide with email -->
-        <section>
-          <h2>Q4 Earnings Report</h2>
-          <h4>Interactive Technical Overview</h4>
-          <p class="email-tag">
-            Technical Consultant<br />
-            <strong>21f2000646@ds.study.iitm.ac.in</strong>
-          </p>
+  <!-- Syntax Highlighting -->
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js/plugin/highlight/monokai.css">
 
-          <aside class="notes">
-            21f2000646
-            Welcome stakeholders, set the context: this deck is built with RevealJS and
-            hosted on GitHub Pages to demonstrate modern presentation capabilities.
-          </aside>
-        </section>
+  <style>
+    .email-tag {
+      font-size: 0.9em;
+      margin-top: 10px;
+      opacity: 0.9;
+      color: #ccc;
+    }
+  </style>
+</head>
 
-        <!-- Markdown slide -->
-        <section data-markdown>
-          <textarea data-template>
-## Key Financial Highlights (Markdown Slide)
+<body>
+  <div class="reveal">
+    <div class="slides">
 
-- **Revenue Growth:** 12.4% YoY
-- **Net Income Margin:** 18.2%
-- **Return on Equity (ROE):** 15.7%
-- **Cost-to-Income Ratio:** 47.3%
+      <!-- TITLE SLIDE -->
+      <section>
+        <h1>Quarterly Earnings Report</h1>
+        <h3>Interactive Technical Presentation</h3>
 
-> As a technical consultant, highlight *both* the financial performance and
-> the supporting technology stack (data pipeline, BI, and reporting).
-          </textarea>
+        <p class="email-tag">
+          Presented by: <br>
+          <strong>21f2000646@ds.study.iitm.ac.in</strong>
+        </p>
 
-          <aside class="notes">
-            Mention that this slide is written in Markdown and rendered via the
-            RevealJS Markdown plugin, which allows non-technical teams to edit content easily.
-          </aside>
-        </section>
+        <aside class="notes">
+          Open with a brief overview of earnings performance, technology investment, and reporting pipeline.
+        </aside>
+      </section>
 
-        <!-- Slide with fragments (animated bullet points) -->
-        <section>
-          <h3>Revenue Drivers – Fragmented Reveal</h3>
-          <ul>
-            <li class="fragment">Increase in digital transaction volume</li>
-            <li class="fragment">Growth in wealth management AUM</li>
-            <li class="fragment">Improved NIM due to rate environment</li>
-            <li class="fragment">Cost optimization in infrastructure &amp; cloud</li>
-          </ul>
+      <!-- MARKDOWN SLIDE -->
+      <section data-markdown>
+        <textarea data-template>
+### Financial Highlights – Markdown Slide
 
-          <aside class="notes">
-            Advance fragments one by one, giving time to explain each revenue driver.
-            Emphasize how technology initiatives helped support these drivers.
-          </aside>
-        </section>
+- **Revenue Growth:** 11.8% YoY  
+- **Net Profit Margin:** 17.4%  
+- **Operating Expense Reduction:** 6.2%  
+- **Cost-to-Income Ratio:** 49.1%
 
-        <!-- Slide with code sample + syntax highlighting -->
-        <section>
-          <h3>Analytics Snippet – Loan Default Risk Model</h3>
-          <pre><code class="language-python">
+> Markdown enables faster editing during reporting cycles.
+        </textarea>
+
+        <aside class="notes">
+          Show that this slide is written in Markdown using RevealJS markdown plugin.
+        </aside>
+      </section>
+
+      <!-- FRAGMENTS -->
+      <section>
+        <h2>Drivers of Growth</h2>
+        <ul>
+          <li class="fragment">Digital transactions up 23%</li>
+          <li class="fragment">Improved NIM due to rate conditions</li>
+          <li class="fragment">AUM growth in Wealth Mgmt</li>
+          <li class="fragment">AI-driven operational efficiency</li>
+        </ul>
+
+        <aside class="notes">
+          Reveal these one at a time to maintain narrative flow.
+        </aside>
+      </section>
+
+      <!-- CODE EXAMPLE -->
+      <section>
+        <h2>Risk Analytics Code Sample</h2>
+
+        <pre><code class="language-python">
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
 
-# Simplified training example
-X = loans_df[["interest_rate", "ltv", "income_to_emi_ratio"]]
-y = loans_df["default_flag"]
+X = df[["ltv", "interest_rate", "income_ratio"]]
+y = df["default_flag"]
 
 model = LogisticRegression(max_iter=1000)
 model.fit(X, y)
 
-# Predicted probability of default for a new application
-proba_default = model.predict_proba([[9.5, 0.75, 0.30]])[0][1]
-print(f"PD estimate: {proba_default:.2%}")
-          </code></pre>
+prob_default = model.predict_proba([[0.82, 10.5, 0.32]])[0][1]
+print("PD:", round(prob_default, 4))
+        </code></pre>
 
-          <aside class="notes">
-            Explain that the institution uses logistic regression (and more advanced models)
-            to estimate probability of default (PD). Mention model governance, validation,
-            and explainability requirements for regulatory compliance.
-          </aside>
-        </section>
+        <aside class="notes">
+          Highlight machine learning usage in credit risk modeling.
+        </aside>
+      </section>
 
-        <!-- Slide with financial math equations -->
-        <section>
-          <h3>Core Financial Formulas</h3>
+      <!-- MATH FORMULAS -->
+      <section>
+        <h2>Financial Formulas</h2>
 
-          <p>
-            Net Present Value (NPV):
-          </p>
-          <p>
-            \[
-              \text{NPV} = \sum_{t=1}^{T} \frac{CF_t}{(1 + r)^t} - C_0
-            \]
-          </p>
+        <p>Net Present Value (NPV):</p>
+        <p>
+          \[
+            \text{NPV} = \sum_{t=1}^{T} \frac{CF_t}{(1 + r)^t} - C_0
+          \]
+        </p>
 
-          <p class="fragment">
-            Return on Equity (ROE):
-          </p>
-          <p class="fragment">
-            \[
-              \text{ROE} = \frac{\text{Net Income}}{\text{Average Shareholders' Equity}}
-            \]
-          </p>
+        <p class="fragment">Return on Equity (ROE):</p>
+        <p class="fragment">
+          \[
+            ROE = \frac{\text{Net Income}}{\text{Shareholder Equity}}
+          \]
+        </p>
 
-          <p class="fragment">
-            Earnings per Share (EPS):
-          </p>
-          <p class="fragment">
-            \[
-              \text{EPS} = \frac{\text{Net Income} - \text{Preferred Dividends}}{\text{Weighted Avg. Shares}}
-            \]
-          </p>
+        <aside class="notes">
+          Explain how KPIs directly tie back to reported numbers.
+        </aside>
+      </section>
 
-          <aside class="notes">
-            Use this slide to connect the reported numbers to well-known financial formulas.
-            Emphasize how these metrics are automatically computed from the data pipeline.
-          </aside>
-        </section>
+      <!-- END SLIDE -->
+      <section>
+        <h2>Thank You</h2>
+        <p>Questions?</p>
 
-        <!-- Closing slide -->
-        <section>
-          <h3>Q&amp;A</h3>
-          <p>Thank you for your attention.</p>
-          <p class="email-tag">
-            For follow-up questions: <strong>21f2000646@ds.study.iitm.ac.in</strong>
-          </p>
+        <p class="email-tag">
+          Contact: <strong>21f2000646@ds.study.iitm.ac.in</strong>
+        </p>
 
-          <aside class="notes">
-            Invite questions. Offer to walk through the underlying data models,
-            dashboards, or the RevealJS/GitHub Pages setup if stakeholders are interested
-            in the technical details.
-          </aside>
-        </section>
-      </div>
+        <aside class="notes">
+          End the presentation and invite questions.
+        </aside>
+      </section>
+
     </div>
+  </div>
 
-    <!-- Reveal.js core JS -->
-    <script src="https://unpkg.com/reveal.js/dist/reveal.js"></script>
+  <!-- Scripts -->
+  <script src="https://unpkg.com/reveal.js/dist/reveal.js"></script>
+  <script src="https://unpkg.com/reveal.js/plugin/markdown/markdown.js"></script>
+  <script src="https://unpkg.com/reveal.js/plugin/highlight/highlight.js"></script>
+  <script src="https://unpkg.com/reveal.js/plugin/math/math.js"></script>
 
-    <!-- Plugins -->
-    <script src="https://unpkg.com/reveal.js/plugin/markdown/markdown.js"></script>
-    <script src="https://unpkg.com/reveal.js/plugin/highlight/highlight.js"></script>
-    <script src="https://unpkg.com/reveal.js/plugin/math/math.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      plugins: [RevealMarkdown, RevealHighlight, RevealMath.KaTeX]
+    });
+  </script>
 
-    <script>
-      Reveal.initialize({
-        hash: true,
-        plugins: [RevealMarkdown, RevealHighlight, RevealMath.KaTeX],
-        math: {
-          // Default KaTeX configuration is fine for most financial formulas
-        }
-      });
-    </script>
-  </body>
+</body>
 </html>
+1. Rep
