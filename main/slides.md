@@ -5,6 +5,10 @@ paginate: true
 footer: "© 2025 — Product Documentation | Contact: 21f2000646@ds.study.iitm.ac.in"
 ---
 
+<!-- theme: custom -->
+<!-- size: 16:9 -->
+<!-- paginate: true -->
+
 <!--
 Custom Marp Theme
 -->
@@ -29,6 +33,7 @@ footer {
 }
 </style>
 
+<!-- _class: lead -->
 # Product Documentation Slides  
 Technical Writer: **21f2000646@ds.study.iitm.ac.in**
 
@@ -48,7 +53,6 @@ This slide demonstrates the **custom theme**, overridden colors, and custom CSS.
 ---
 
 <!-- Background Image Slide -->
-<!-- Use any URL-safe image; replace if needed -->
 ![bg](https://images.unsplash.com/photo-1522071820081-009f0129c71c)
 
 # Background Image Slide
