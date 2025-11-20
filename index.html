@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Q3 Earnings Report: Modern Financial Insights</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/blood.css" id="theme">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/monokai.css" id="highlight-theme">
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            
+            <section>
+                <h2>💰 Q3 Quarterly Earnings Report</h2>
+                <p>A Deep Dive into Modern Financial Performance</p>
+                <aside class="notes">
+                    Welcome everyone. This presentation uses modern web technologies to give you an interactive view of our performance. We'll start with an overview of the key results.
+                </aside>
+            </section>
+
+            <section data-markdown>
+                <textarea data-template>
+                    ## ✨ Key Performance Indicators (KPIs)
+
+                    * **Revenue Growth:** Achieved **12%** year-over-year.
+                    * **Net Income:** Increased by **8%**, driven by lower operating costs.
+                    * **Digital Adoption:** Mobile transaction volume up **25%**.
+
+                    ---
+
+                    ### 🎯 Focus Areas
+                    We are strategically prioritizing **FinTech integration** and **AI-driven risk assessment**.
+                </textarea>
+                <aside class="notes">
+                    The Markdown slide clearly outlines our main KPIs. The standout is the 12% revenue growth and the 25% surge in mobile usage, validating our digital strategy.
+                </aside>
+            </section>
+
+            <section>
+                <h2>📈 Revenue Breakdown: Q3</h2>
+                <p class="fragment fade-in-then-out" data-fragment-index="1">Initial projections were conservative.</p>
+                <p class="fragment fade-in" data-fragment-index="2">Q3 **Banking Operations** contributed **60%**.</p>
+                <p class="fragment fade-in" data-fragment-index="3">Q3 **Wealth Management** contributed **40%**.</p>
+                <p class="fragment highlight-red" data-fragment-index="4">This split is an improvement on Q2's 70/30 ratio.</p>
+                <aside class="notes">
+                    Use the fragments to guide the audience's focus. Start by acknowledging the conservative projections, then reveal the two main segments, and finally emphasize the strategic improvement in the mix.
+                </aside>
+            </section>
+
+            <section>
+                <h2>🐍 Risk Model Backtesting</h2>
+                <p>We use Python for high-speed, parallel backtesting of our quantitative models.</p>
+                <pre><code data-trim data-line-numbers="2,4">
+def calculate_pnl(trades, benchmark_date):
+    """
+    Calculates Profit & Loss (PnL) for a list of trades
+    against a given benchmark.
+    """
+    pnl = sum(t.return_pct for t in trades if t.date < benchmark_date)
+    return pnl
+
+# Example call
+results = calculate_pnl(q3_trades, '2023-09-30')
+                </code></pre>
+                <aside class="notes">
+                    This code snippet demonstrates the rigor of our risk management. The `data-line-numbers` attribute highlights the key function definition and the PnL calculation line, showing transparency in our methods.
+                </aside>
+            </section>
+
+            <section>
+                <h2>📐 Capital Asset Pricing Model (CAPM)</h2>
+                <p>We use CAPM to determine the theoretical required rate of return for our strategic investments:</p>
+                $$
+                E(R_i) = R_f + \beta_i (E(R_m) - R_f)
+                $$
+                <ul>
+                    <li>$E(R_i)$: Expected return on asset $i$</li>
+                    <li>$R_f$: Risk-free rate</li>
+                    <li>$\beta_i$: Beta of asset $i$ (Systematic risk)</li>
+                    <li>$E(R_m)$: Expected market return</li>
+                </ul>
+                <aside class="notes">
+                    The CAPM formula is foundational to our investment thesis. Explain what each variable represents and emphasize that we are continuously refining our beta calculations ($\beta_i$) based on market volatility.
+                </aside>
+            </section>
+            
+            <section>
+                <h2>🤝 Thank You</h2>
+                <p>For further questions, please contact:</p>
+                <p>Technical Consultant</p>
+                <p>Email: **21f2000646@ds.study.iitm.ac.in**</p>
+                <aside class="notes">
+                    Thank you for your time. I am now open to any questions you may have regarding the data, models, or technical aspects of this report.
+                </aside>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/math/math.js"></script>
+
+    <script>
+        Reveal.initialize({
+            hash: true,
+            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ],
+            katex: {
+                // Ensure math rendering is enabled and configured
+            },
+            // Options for controlling fragments (animations)
+            fragments: true 
+        });
+    </script>
+</body>
+</html>
